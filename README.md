@@ -23,7 +23,7 @@ Configuration file
 ------------------------------
 An example of configuration file might be (here using on Windows):<br/>
 
-<code>
+<pre>
 backup_dir: Drive:\Default\backup\dir<br/>
 after_backup: cmd-line-to-execute-after-backup<br/>
 # comment<br/>
@@ -35,7 +35,7 @@ path: Drive:\Path\to\the\files<br/>
 -files: omit.txt exclude.dat<br/>
 -dirs: \dir1\dir2\do_not_backup<br/>
 +masks: file* alternative_mask*<br/>
-</code>
+</pre>
 
 Each field can be preceded with + (default) or - which
 tells the script to filter or unfilter by specified criterias.
