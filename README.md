@@ -1,7 +1,7 @@
 Usage
 ------------------------------
 
-    UniversalBackup.py [options]<br/>
+    UniversalBackup.py [options]
 Options:<br/>
   -d          - turn on debugging output<br/>
   -l [file]   - redirect stdout to the [file]<br/>
