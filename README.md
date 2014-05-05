@@ -43,28 +43,21 @@ Inclusion/exclusion filters are case-insensitive.
 Only `label`, as well as `path` specifiers are mandatory for a section.<br/>
 Where:<br/>
 <pre>
-  - **backup_dir** - default destination directory where files<br/>
-          will be copied, unless indicated otherwise inside a section<br/>
-  - **after_backup** - command line / program commands to execute after<br/>
-          successful backup. User can specify<br/>
-          more then one of those fields.<br/>
-  - **comment** - stands for a regular comment, that will be skipped<br/>
-  - **label** - files section name, separetes files groups<br/>
+  - **backup_dir** - default destination directory where files will be copied, unless indicated otherwise inside a section
+  - **after_backup** - command line / program commands to execute after successful backup. User can specify more then one of those fields.
+  - **comment** - stands for a regular comment, that will be skipped
+  - **label** - files section name, separetes files groups
   - **[no]recursive** - specifies wheter to backup files recursively.<br/>
-          When 'norecursive' is met, then group will not be scanned<br/>
-          recursively. This is by default.<br/>
-  - **dst** - supersedes backup_dir or acts as a relative path to the backup_dir<br/>
-  - **path** - specifies file/directory path to file/files that need<br/>
-          to be backed up. Path can be relative to the current script's<br/>
-          directory, or absolute with drive letter.<br/>
-          Wildcards *, ? allowed. There can be more then one path<br/>
-          field. This will specify more then one files for example.<br/>
+          When 'norecursive' is met, then group will not be scanned recursively. This is a default behaviour.<br/>
+  - **dst** - supersedes backup_dir or acts as a relative path to the backup_dir
+  - **path** - specifies file/directory path to file/files that need to be backed up.<br/>
+          Path can be relative to the current script's directory, or absolute with drive letter.<br/>
+          Wildcards *, ? are allowed. There can be more then one path field. This will specify more then one files for example.
   - **[+/-]exts** - preceding plus tells the script to include in backup<br/>
           files with specified extension which occured in this list.<br/>
           +exts - include files with following extenstions<br/>
           -exts - exclude ditto<br/>
-  - **[+/-]files** - explicit file names to be included/excluded. It is not<br/>
-          a necessity for this names to contain an extension.<br/>
-  - **[+/-]dirs** - same as in files field, but concerns directories.<br/>
-  - **[+/-]masks** - mask to be used as an include/exclude filter.<br/>
+  - **[+/-]files** - explicit file names to be included/excluded. It is not a necessity for this names to contain an extension.
+  - **[+/-]dirs** - same as in files field, but concerns directories.
+  - **[+/-]masks** - mask to be used as an include/exclude filter.
 </pre><br/>
