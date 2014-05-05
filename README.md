@@ -1,8 +1,13 @@
+Usage
+------------------------------
 
-Usage:    UniversalBackup.py [options]
+    UniversalBackup.py [options]
 Options:
   -d          - turn on debugging output
   -l [file]   - redirect stdout to the [file]
+
+Description 
+------------------------------
 
 This program acts as an universal backup utility, which intends
 to copy selected files from one place to another. Files to be copied,
@@ -14,8 +19,10 @@ The code is highly platform-independent.
 
 Script may be converted to an 'exe' form using py2exe on windows.
 
-Configuration file must obey following format:
+Configuration file
 ------------------------------
+An example of configuration file might be (here using on Windows):
+
 backup_dir: Drive:\Default\backup\dir
 after_backup: cmd-line-to-execute-after-backup
 # comment
@@ -27,7 +34,6 @@ path: Drive:\Path\to\the\files
 -files: omit.txt exclude.dat
 -dirs: \dir1\dir2\do_not_backup
 +masks: file* alternative_mask*
-------------------------------
 
 Each field can be preceded with + (default) or - which
 tells the script to filter or unfilter by specified criterias.
