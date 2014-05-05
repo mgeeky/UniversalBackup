@@ -23,6 +23,7 @@ Configuration file
 ------------------------------
 An example of configuration file might be (here using on Windows):<br/>
 
+<pre>
 backup_dir: Drive:\Default\backup\dir<br/>
 after_backup: cmd-line-to-execute-after-backup<br/>
 # comment<br/>
@@ -34,6 +35,7 @@ path: Drive:\Path\to\the\files<br/>
 -files: omit.txt exclude.dat<br/>
 -dirs: \dir1\dir2\do_not_backup<br/>
 +masks: file* alternative_mask*<br/>
+</pre>
 
 Each field can be preceded with + (default) or - which
 tells the script to filter or unfilter by specified criterias.
@@ -42,7 +44,6 @@ the same type in a one section (e.g. +exts and -exts concurrent).
 Inclusion/exclusion filters are case-insensitive.
 Only `label`, as well as `path` specifiers are mandatory for a section.<br/>
 Where:<br/>
-<pre>
   - **backup_dir** - default destination directory where files will be copied, unless indicated otherwise inside a section
   - **after_backup** - command line / program commands to execute after successful backup. User can specify more then one of those fields.
   - **comment** - stands for a regular comment, that will be skipped
@@ -60,4 +61,3 @@ Where:<br/>
   - **[+/-]files** - explicit file names to be included/excluded. It is not a necessity for this names to contain an extension.
   - **[+/-]dirs** - same as in files field, but concerns directories.
   - **[+/-]masks** - mask to be used as an include/exclude filter.
-</pre><br/>
