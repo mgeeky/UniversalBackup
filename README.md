@@ -3,8 +3,10 @@ Usage
 
     UniversalBackup.py [options]<br/>
 Options:<br/>
-  -d          - turn on debugging output<br/>
+<pre>
+  -d          - turn on debugging output<br/></pre><pre>
   -l [file]   - redirect stdout to the [file]<br/>
+<pre>
 
 Description 
 ------------------------------
@@ -42,6 +44,7 @@ the same type in a one section (e.g. +exts and -exts concurrent).
 Inclusion/exclusion filters are case-insensitive.
 Only `label`, as well as `path` specifiers are mandatory for a section.<br/>
 Where:<br/>
+<pre>
   - backup_dir - default destination directory where files<br/>
           will be copied, unless indicated otherwise inside a section<br/>
   - after_backup - command line / program commands to execute after<br/>
@@ -66,4 +69,4 @@ Where:<br/>
           a necessity for this names to contain an extension.<br/>
   - [+/-]dirs - same as in files field, but concerns directories.<br/>
   - [+/-]masks - mask to be used as an include/exclude filter.<br/>
-<br/>
+</pre><br/>
